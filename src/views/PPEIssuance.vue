@@ -165,7 +165,7 @@ async function registrar() {
   const qtdEstoque = epiSelecionado?.quantidade ?? 0
   
   if (form.value.quantidade > qtdEstoque) {
-    erro.value = `Estoque insuficiente (${qtdEstoque} disponíveis)`; return
+    erro.value = `Insufficient stock (${qtdEstoque} available)`; return
   }
 
   // Insere o registro da entrega
